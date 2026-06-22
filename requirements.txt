@@ -1,6 +1,6 @@
 langchain==0.3.26
 flask==3.1.1
-sentence-transformers==4.1.0  #it use becz of open source embedding model which is available in hagging face
+fastembed
 pypdf==5.6.1  #loading pdf document
 python-dotenv==1.1.0 #manage env file
 langchain-pinecone==0.2.8 #it already instll inside langchin so we write like this
