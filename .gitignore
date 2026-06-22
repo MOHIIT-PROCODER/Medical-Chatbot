@@ -1,0 +1,5 @@
+.env
+.env. e n v 
+__pycache__/
+*.pyc
+medical_chatbot.egg-info/
