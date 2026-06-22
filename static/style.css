@@ -184,11 +184,85 @@ body, html {
     backdrop-filter: blur(10px);
 }
 
-/* MOBILE */
-@media(max-width: 576px) {
+/* MOBILE RESPONSIVENESS */
+@media(max-width: 768px) {
+    body, html {
+        overflow: hidden; /* Prevent double scrolling or bouncing on mobile */
+    }
+    
+    .container-fluid {
+        padding: 0 !important;
+        height: 100% !important;
+    }
+    
+    .app-header {
+        display: none !important; /* Hide outer header to save screen space */
+    }
+    
+    .chat {
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100% !important;
+    }
+    
+    .row {
+        margin: 0 !important;
+        height: 100% !important;
+    }
+    
     .card {
-        height: 100vh;
+        height: 100dvh !important; /* Dynamic viewport height to prevent keyboard issues */
         border-radius: 0 !important;
+        border: none !important;
+    }
+    
+    .card-header {
+        border-radius: 0 !important;
+        padding: 12px 16px !important;
+    }
+    
+    .card-footer {
+        border-radius: 0 !important;
+        padding: 12px 16px !important;
+        padding-bottom: calc(12px + env(safe-area-inset-bottom)) !important; /* Mobile safe area padding */
+    }
+
+    .msg_card_body {
+        padding: 16px !important;
+    }
+    
+    .msg_cotainer,
+    .msg_cotainer_send {
+        max-width: 85% !important; /* Allow message bubble to expand further */
+    }
+    
+    .welcome-container {
+        padding: 15px 10px !important;
+    }
+    
+    .welcome-icon-wrapper {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 10px;
+    }
+    
+    .welcome-icon {
+        font-size: 24px;
+    }
+    
+    .welcome-text {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .suggested-queries {
+        max-width: 100% !important;
+    }
+    
+    .suggested-btn {
+        padding: 10px 14px !important;
+        font-size: 12px !important;
     }
 }
 
